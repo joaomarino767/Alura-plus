@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinzasecundario: #c0c0c0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+    --cor-textosecundario: #f9f9f9;
+    --botao-azul-efeito: #3c92fa;
+    --botao-secundario-hover: rgba(255, 255, 255, 0.1);
+
+    --fonte-pricipal: "inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-pricipal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal {
+    background-image: url("assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao__secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal)
+}
+
+.container_aviso {
+    font-size: 12px;
+    color: var(--cinzasecundario);
+}
+
+.container__margem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+    text-align: center;
+}
+
+.descricao__titulo {
+    font-family: var(--fonte-pricipal);
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--branco-principal);
+    margin-bottom: 0.2em;
+}
+
+.descricao__texto {
+    color: var(--cor-textosecundario);
+    font-family: var(--fonte-pricipal);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2em;
+}
+
+.container__terciario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+    margin: 5em 10em;
+}
+
+.container__paragrafo {
+    text-align: left;
+    max-width: 40%;
+}
+
+
+.container__dispositivo {
+    display: flex;
+    align-items: center;
+    padding: 6%;
+    flex-direction: column;
+}
+
+.paragrafo__dispositivo {
+    display: flex;
+    gap: 57px;
+    padding-top: 2.5%;
+}
+
+.dispositivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto {
+    font-family: var(--fonte-pricipal);
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.rodape {
+    text-align: center;
+}
+
+.rodape__logo {
+    padding-bottom: 2%;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    text-align: center;
+}
+
+.lista__link {
+    list-style-type: none;
+}
+
+.link {
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+
+.rodape__paragrafo {
+    color: var(--cinzasecundario);
+    font-size: 14px;
+    padding: 2%;
+}
+
+.rodape__paragrafo2 {
+    color: var(--cinzasecundario);
+    font-size: 14px;
+    padding: 0% 15%;
+    padding-bottom: 2%;
+}
+
+.link:hover {
+    color: #58a6ff;
+    text-shadow: 0 0 8px rgba(88, 166, 255, 0.6);
+}
+
+.link:active {
+    transform: scale(0.97);
+    color: #1f6feb;
+    /* azul mais escuro no clique */
+    text-shadow: 0 0 6px rgba(31, 111, 235, 0.8);
+    /* brilho mais forte */
+}
+
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
+.container__botao:active {
+    background-color: #0f6cd1;
+    transform: scale(0.98);
+}
+
+.botao__secundario:hover {
+    background-color: var(--botao-secundario-hover);
+    color: var(--branco-principal);
+}
+
+.botao__secundario:active {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(0.98);
+    /* efeito de "pressionado" */
+}
